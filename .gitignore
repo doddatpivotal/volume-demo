@@ -19,3 +19,9 @@ hs_err_pid*
 *.iml
 
 ci/credentials.yml
+
+.settings/
+target/
+.project
+.classpath
+.factorypath

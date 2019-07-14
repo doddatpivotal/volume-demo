@@ -30,6 +30,13 @@ public class FileUploadController {
         return storageService.config();
     }
 
+    @RequestMapping("/delete_all")
+    @ResponseBody
+    public String deleteAll() {
+        storageService.deleteAll();
+        return "Deleted";
+    }
+
     @RequestMapping("/files")
     @ResponseBody
     public List listUploadedFiles() throws IOException {
